@@ -1,9 +1,10 @@
 import React from "react";
 import Article from "./Article";
 
-function ArticleList({articles}){
-    console.log(articles);
-    const articleList = articles.map((article) => {
+function ArticleList({posts}){
+    // console.log(articles);
+    const articleList = posts.map((article) => {
+        // console.log(article)
         return <Article key={article.id} title={article.title} date={article.date} preview={article.preview} minutes={article.minutes}/>
     });
     return(
